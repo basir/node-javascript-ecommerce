@@ -9,3 +9,4 @@ JS AMAZONA
    6. npm install live-server
    7. add start command as live-server src --verbose
    8. run npm start
+   9. check result
