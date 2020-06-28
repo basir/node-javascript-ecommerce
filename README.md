@@ -49,3 +49,19 @@ JS AMAZONA
    8. build parsedUrl and compare with routes
    9. if route exists render it, else render Error404
    10. create screens/Error404.js and render error message
+6. Create Node.JS Server
+   1. run npm init in root jsamazona folder
+   2. npm install express
+   3. create server.js
+   4. add start command as node backend/server.js
+   5. require express
+   6. move data.js from frontend to backend
+   7. create route for /api/products
+   8. return products in data.js
+   9. run npm start
+7. Load Products From Backend
+   1. edit HomeScreen.js
+   2. make render async
+   3. fetch products from '/api/products' in render()
+   4. make router() async and call await HomeScreen.render()
+   5. use cors on backend
