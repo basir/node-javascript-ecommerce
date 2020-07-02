@@ -124,7 +124,44 @@ JS AMAZONA
     6. style .details and all columns
     7. create add to cart button with add-button id
 15. Product Screen Action
+
     1. after_render() to add event to the button
     2. add event handler for the button
     3. redirect user to cart/:product_id
     4. implement after_render in index.js
+
+16. Add To Cart Action
+    1. create CartScreen.js
+    2. parseRequestUrl
+    3. getProduct(request.id)
+    4. addToCart
+    5. getCartItems
+    6. cartItems.find
+    7. if existItem update qty
+    8. else add item
+    9. setCartItems
+17. Cart Screen UI
+    1. cartItems = getCartItems()
+    2. create 2 columns for cart items and cart action
+    3. cartItems.length === 0 ? cart is empty
+    4. show item image, name, qty and price
+    5. cart action
+    6. Subtotal
+    7. Proceed to Checkout button
+    8. Add CSS Style
+18. Update and Delete Cart Items
+    1. add qty select next to each item
+    2. after_render()
+    3. add change event to qty select
+    4. getCartItems() and pass to addToCart()
+    5. set force to true to addToCart()
+    6. create rerender() as (component, areaName = 'content')
+    7. component.render and component.after_render
+    8. if force is true then rerender()
+    9. add delete button next to each item
+    10. add click event to qty button
+    11. call removeFromCart(deleteButton.id)
+    12. implement removeFromCart(id)
+    13. setCartItems( getCartItems().filter)
+    14. if id === parseRequestUrl().id? redirect to '/cart'
+    15. else rerender(CartScreen);
