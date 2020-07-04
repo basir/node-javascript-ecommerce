@@ -124,12 +124,10 @@ JS AMAZONA
     6. style .details and all columns
     7. create add to cart button with add-button id
 15. Product Screen Action
-
     1. after_render() to add event to the button
     2. add event handler for the button
     3. redirect user to cart/:product_id
     4. implement after_render in index.js
-
 16. Add To Cart Action
     1. create CartScreen.js
     2. parseRequestUrl
@@ -165,3 +163,97 @@ JS AMAZONA
     13. setCartItems( getCartItems().filter)
     14. if id === parseRequestUrl().id? redirect to '/cart'
     15. else rerender(CartScreen);
+19. Connect To MongoDB and Create Admin User
+    1. npm install mongoose
+    2. connect to mongodb
+    3. create config.js
+    4. npm install dotenv
+    5. export MONGODB_URL
+    6. create models/userModel.js
+    7. create userSchema and userModel
+    8. create userRoute
+    9. create createadmin route
+20. Sign-in Screen UI
+    2. create SigninScreen
+    3. render email and password fields
+    4. style signin form
+21. Sign-in Screen Action
+    1. after_render handle form submit
+    2. create signin request in frontend
+    3. create signin api in backend
+22. Create Header Component
+    1. update index.html
+    1. add header render and after render to router function
+    1. show header menu based on user logged in or not
+23. Register Screen Action
+    1. after_render handle form submit
+    2. create register request in frontend
+    3. create register api in backend
+24. Create Checkout Wizard Header Component
+    1. create component
+    2. style component
+25. Shipping Screen
+    1. create ShippingScreen.js
+    2. style elements
+    3. handle form submit
+26. Payment Screen
+    1. create PaymentScreen.js
+    2. style elements
+    3. handle form submit
+27. PlaceOrder Screen UI
+    1. create PlaceOrder.js
+    2. style elements
+28. PlaceOrder Screen Action
+    1. handle form submit
+    2. create backend api to create order
+29. Order Screen
+    1. create OrderScreen.js
+    2. style elements
+30. PayPal Payment
+    1. add paypal checkout script
+    2. show paypal button
+    3. update order after payment
+31. User Profile UI
+    1. create ProfileScreen.js
+    2. style elements
+32. User Profile Data
+    1. Create profile info backend api
+    2. Create user orders api
+    3. Call apis in the backend
+33. Update Profile
+    1. handle form submit
+    2. send request to backend
+    3. create api to update profile
+34. Admin Products UI
+    1. create Admin Order menu in header
+    2. create ProductListScreen.js
+    3. show products with edit and delete button
+    4. show create product button
+    5. implement create product backend
+    6. redirect user to edit product screen
+35. Edit Product
+    1. create ProductListScreen.js
+    2. load product data from backend
+    3. handle form submit
+    4. save product in backend
+36. Delete Product
+    1. update ProductListScreen.js
+    2. handle delete button
+    3. rerender after deletion
+37. Admin Orders
+    1. create Admin Order menu in header
+    2. create AdminOrder.js
+    3. load orders from backend
+    4. list them in the screen
+    5. show delete and edit button
+    6. redirect to order details on edit action
+38. Edit Order
+    1. if order is payed show deliver button for admin
+    2. handle click on deliver button
+    3. set state to delivered
+39. Delete Order
+    1. update OrderListScreen.js
+    2. handle delete button
+    3. rerender after deletion
+40. Publish heroku
+    1. publish steps
