@@ -177,83 +177,118 @@ JS AMAZONA
     2. create SigninScreen
     3. render email and password fields
     4. style signin form
-21. Sign-in Screen Action
+21. Sign-in Screen Backend
+    3. create signin api in backend
+    4. create route for /api/users/signin
+    5. create check user name and password
+    6. if it is not ok the return 401 error
+    7. install express-async-handler
+    8. wrap it in expressAsyncHandler
+    9. add error middleware in server.js
+    10. install Postman
+    11. send post request
+    12. test with invalid user password
+    13. otherwise generate token
+    14. install jsonwebtoken
+    15. set config.JWT_SECRET to somethingsecret
+    16. add generateToken to utils.js
+    17. return token
+    18. test with correct user and password
+22. Sign-in Screen Action
     1. after_render handle form submit
     2. create signin request in frontend
-    3. create signin api in backend
-22. Create Header Component
+    3. show alert if email or password is incorrect
+    4. Add getUserInfo and setUserInfo to localStorage
+    5. create Header component
+    6. if userInfo.email exist show user name otherwise show signin
+23. Create Progress Indicator and Alert Component
+    1. create overlay loading div in index.html
+    2. Style overlay loading
+    3. create showLoading() function
+    4. set loading-overlay classList add active
+    5. create hideLoading() function
+    6. create overlay message div in index.html
+    7. add style overlay message
+    8. create showMessage(message, callback)
+    9. document message-overlay set inner HTML
+    10. div > div id message-overlay-content
+    11. show message
+    12. button id message-overlay-close-button OK
+    13. add class active to it
+    14. add event listener for button to call callback
+24. Create Header Component
     1. update index.html
-    1. add header render and after render to router function
-    1. show header menu based on user logged in or not
-23. Register Screen Action
+    2. add header render and after render to router function
+    3. show header menu based on user logged in or not
+25. Register Screen Action
     1. after_render handle form submit
     2. create register request in frontend
     3. create register api in backend
-24. Create Checkout Wizard Header Component
+26. Create Checkout Wizard Header Component
     1. create component
     2. style component
-25. Shipping Screen
+27. Shipping Screen
     1. create ShippingScreen.js
     2. style elements
     3. handle form submit
-26. Payment Screen
+28. Payment Screen
     1. create PaymentScreen.js
     2. style elements
     3. handle form submit
-27. PlaceOrder Screen UI
+29. PlaceOrder Screen UI
     1. create PlaceOrder.js
     2. style elements
-28. PlaceOrder Screen Action
+30. PlaceOrder Screen Action
     1. handle form submit
     2. create backend api to create order
-29. Order Screen
+31. Order Screen
     1. create OrderScreen.js
     2. style elements
-30. PayPal Payment
+32. PayPal Payment
     1. add paypal checkout script
     2. show paypal button
     3. update order after payment
-31. User Profile UI
+33. User Profile UI
     1. create ProfileScreen.js
     2. style elements
-32. User Profile Data
+34. User Profile Data
     1. Create profile info backend api
     2. Create user orders api
     3. Call apis in the backend
-33. Update Profile
+35. Update Profile
     1. handle form submit
     2. send request to backend
     3. create api to update profile
-34. Admin Products UI
+36. Admin Products UI
     1. create Admin Order menu in header
     2. create ProductListScreen.js
     3. show products with edit and delete button
     4. show create product button
     5. implement create product backend
     6. redirect user to edit product screen
-35. Edit Product
+37. Edit Product
     1. create ProductListScreen.js
     2. load product data from backend
     3. handle form submit
     4. save product in backend
-36. Delete Product
+38. Delete Product
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-37. Admin Orders
+39. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-38. Edit Order
+40. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-39. Delete Order
+41. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-40. Publish heroku
+42. Publish heroku
     1. publish steps
