@@ -216,79 +216,75 @@ JS AMAZONA
     12. button id message-overlay-close-button OK
     13. add class active to it
     14. add event listener for button to call callback
-24. Create Header Component
-    1. update index.html
-    2. add header render and after render to router function
-    3. show header menu based on user logged in or not
-25. Register Screen Action
+24. Register Screen Action
     1. after_render handle form submit
     2. create register request in frontend
     3. create register api in backend
-26. Create Checkout Wizard Header Component
+25. Create Checkout Wizard Header Component
     1. create component
     2. style component
-27. Shipping Screen
+26. Shipping Screen
     1. create ShippingScreen.js
     2. style elements
     3. handle form submit
-28. Payment Screen
+27. Payment Screen
     1. create PaymentScreen.js
     2. style elements
     3. handle form submit
-29. PlaceOrder Screen UI
+28. PlaceOrder Screen UI
     1. create PlaceOrder.js
     2. style elements
-30. PlaceOrder Screen Action
+29. PlaceOrder Screen Action
     1. handle form submit
     2. create backend api to create order
-31. Order Screen
+30. Order Screen
     1. create OrderScreen.js
     2. style elements
-32. PayPal Payment
+31. PayPal Payment
     1. add paypal checkout script
     2. show paypal button
     3. update order after payment
-33. User Profile UI
+32. User Profile UI
     1. create ProfileScreen.js
     2. style elements
-34. User Profile Data
+33. User Profile Data
     1. Create profile info backend api
     2. Create user orders api
     3. Call apis in the backend
-35. Update Profile
+34. Update Profile
     1. handle form submit
     2. send request to backend
     3. create api to update profile
-36. Admin Products UI
+35. Admin Products UI
     1. create Admin Order menu in header
     2. create ProductListScreen.js
     3. show products with edit and delete button
     4. show create product button
     5. implement create product backend
     6. redirect user to edit product screen
-37. Edit Product
+36. Edit Product
     1. create ProductListScreen.js
     2. load product data from backend
     3. handle form submit
     4. save product in backend
-38. Delete Product
+37. Delete Product
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-39. Admin Orders
+38. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-40. Edit Order
+39. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-41. Delete Order
+40. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-42. Publish heroku
+41. Publish heroku
     1. publish steps
