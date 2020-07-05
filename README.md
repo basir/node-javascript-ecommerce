@@ -228,7 +228,8 @@ JS AMAZONA
     3. after_render handle form submit
     4. create profile update request in frontend
     5. create profile update api in backend
-    6. implement sign out
+    6. create isAuth in utils.js and use in update profile
+    7. implement sign out
 26. Create Checkout Wizard Header Component
     1. create component
     2. style component
