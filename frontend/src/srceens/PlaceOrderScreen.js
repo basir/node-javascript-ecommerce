@@ -1,5 +1,12 @@
-import { getCartItems, getShipping, getPayment } from '../localStorage';
+import {
+  getCartItems,
+  getShipping,
+  getPayment,
+  cleanCart,
+} from '../localStorage';
 import CheckoutSteps from '../components/CheckoutSteps';
+import { showLoading, hideLoading, showMessage } from '../utils';
+import { createOrder } from '../api';
 
 const convertCartToOrder = () => {
   const orderItems = getCartItems();
@@ -29,7 +36,22 @@ const convertCartToOrder = () => {
   };
 };
 const PlaceOrderScreen = {
-  after_render: () => {},
+  after_render: async () => {
+    document
+      .getElementById('placeorder-button')
+      .addEventListener('click', async () => {
+        const order = convertCartToOrder();
+        showLoading();
+        const data = await createOrder(order);
+        hideLoading();
+        if (data.error) {
+          showMessage(data.error);
+        } else {
+          cleanCart();
+          document.location.hash = `/order/${data.order._id}`;
+        }
+      });
+  },
   render: () => {
     const {
       orderItems,
@@ -100,7 +122,7 @@ const PlaceOrderScreen = {
                  <li><div>Tax</div><div>$${taxPrice}</div></li>
                  <li class="total"><div>Order Total</div><div>$${totalPrice}</div></li> 
                  <li>
-                 <button class="primary fw">
+                 <button id="placeorder-button" class="primary fw">
                  Place Order
                  </button>
         </div>
