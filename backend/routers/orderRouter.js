@@ -26,7 +26,7 @@ orderRouter.post(
       shipping: req.body.shipping,
       payment: req.body.payment,
       itemsPrice: req.body.itemsPrice,
-      taxtPrice: req.body.taxtPrice,
+      taxPrice: req.body.taxPrice,
       shippingPrice: req.body.shippingPrice,
       totalPrice: req.body.totalPrice,
     });
