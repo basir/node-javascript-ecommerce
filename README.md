@@ -253,47 +253,39 @@ JS AMAZONA
     1. add paypal checkout script
     2. show paypal button
     3. update order after payment
-31. User Profile UI
-    1. create ProfileScreen.js
-    2. style elements
-32. User Profile Data
-    1. Create profile info backend api
-    2. Create user orders api
-    3. Call apis in the backend
-33. Update Profile
-    1. handle form submit
-    2. send request to backend
-    3. create api to update profile
-34. Admin Products UI
+31. User Order History
+    1. Create order history api
+    2. Show orders in profile screen
+32. Admin Products
     1. create Admin Order menu in header
     2. create ProductListScreen.js
     3. show products with edit and delete button
     4. show create product button
     5. implement create product backend
     6. redirect user to edit product screen
-35. Edit Product
+33. Edit Product
     1. create ProductListScreen.js
     2. load product data from backend
     3. handle form submit
     4. save product in backend
-36. Delete Product
+34. Delete Product
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-37. Admin Orders
+35. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-38. Edit Order
+36. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-39. Delete Order
+37. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-40. Publish heroku
+38. Publish heroku
     1. publish steps
