@@ -5,6 +5,7 @@ import Error404Screen from './srceens/Error404Screen';
 import CartScreen from './srceens/CartScreen';
 import SigninScreen from './srceens/SigninScreen';
 import Header from './components/Header';
+import RegisterScreen from './srceens/RegisterScreen';
 
 const routes = {
   '/': HomeScreen,
@@ -12,6 +13,7 @@ const routes = {
   '/cart/:id': CartScreen,
   '/cart': CartScreen,
   '/signin': SigninScreen,
+  '/register': RegisterScreen,
 };
 const router = async () => {
   showLoading();
