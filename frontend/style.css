@@ -322,6 +322,9 @@ footer {
 .order-info > div:first-child {
   margin-top: 0;
 }
+.order-info > div > div {
+  padding: 1rem;
+}
 .order-action {
   flex: 1 1 20rem;
   border: 0.1rem #c0c0c0 solid;
