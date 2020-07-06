@@ -263,9 +263,11 @@ JS AMAZONA
     8. create payOrder in api.js
     9. create route for /:id/pay in orderRouter.js
     10. rerender after pay order
-31. User Order History
-    1. Create order history api
-    2. Show orders in profile screen
+31. Display Orders History
+    1. create customer orders api
+    2. create api for getMyOrders
+    3. show orders in profile screen
+    4. style orders
 32. Admin Products
     1. create Admin Order menu in header
     2. create ProductListScreen.js
