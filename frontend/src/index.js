@@ -13,9 +13,11 @@ import PlaceOrderScreen from './srceens/PlaceOrderScreen';
 import OrderScreen from './srceens/OrderScreen';
 import DashboardScreen from './srceens/DashboardScreen';
 import ProductListScreen from './srceens/ProductListScreen';
+import ProductEditScreen from './srceens/ProductEditScreen';
 
 const routes = {
   '/': HomeScreen,
+  '/product/:id/edit': ProductEditScreen,
   '/product/:id': ProductScreen,
   '/order/:id': OrderScreen,
   '/cart/:id': CartScreen,
@@ -36,6 +38,7 @@ const router = async () => {
     (request.resource ? `/${request.resource}` : '/') +
     (request.id ? '/:id' : '') +
     (request.verb ? `/${request.verb}` : '');
+  console.log(request);
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
   const header = document.getElementById('header-container');
   header.innerHTML = await Header.render();
