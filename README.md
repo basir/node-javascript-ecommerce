@@ -294,32 +294,36 @@ JS AMAZONA
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-37. Admin Orders
+37. Show Categories In Sidebar Menu
+    1. update ProductListScreen.js
+    2. handle delete button
+    3. rerender after deletion
+38. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-38. Edit Order
+39. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-39. Delete Order
+40. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-40. Show Summary Report in Dashboard
+41. Show Summary Report in Dashboard
     1. create summary section
     2. style summary
     3. create summary backend
     4. create getSummary in api.js
     5. load data in dashboard screen
     6. show 3 boxes for Users, Orders and Sales
-41. Show Chart in Dashboard
+42. Show Chart in Dashboard
     1. import chartist
     2. add chartist css to index.html
     3. create linear chart for daily sales
     4. create pie chart for product categories
-42. Publish heroku
+43. Publish heroku
     1. publish steps
