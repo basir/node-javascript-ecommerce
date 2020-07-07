@@ -91,14 +91,16 @@ header {
 }
 header a {
   color: #ffffff;
-  font-weight: bold;
   text-decoration: none;
+  padding-right: 1rem;
 }
 header a:hover {
   color: #f08040;
 }
 .brand a {
+  font-weight: bold;
   font-size: 3rem;
+  padding-left: 1rem;
 }
 footer {
   background-color: #203040;
@@ -371,4 +373,38 @@ tbody > tr:nth-child(odd) {
 }
 td {
   padding: 0.5rem;
+}
+/* Dashboard */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.dashboard h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.dashboard-menu {
+  flex: 1 1 20rem;
+  background-color: #f0f0f0;
+}
+.dashboard-menu ul {
+  padding: 0;
+}
+.dashboard-menu a {
+  display: flex;
+  padding: 1rem;
+  padding-left: 2rem;
+  justify-content: space-between;
+}
+.dashboard-menu a:hover {
+  background-color: #c0c0c0;
+}
+.dashboard-menu li.selected a {
+  background-color: #c0c0c0;
+  color: #f08040;
+}
+.dashboard-content {
+  flex: 4 1 80rem;
+  padding: 1rem;
 }
