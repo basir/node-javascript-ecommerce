@@ -268,36 +268,58 @@ JS AMAZONA
     2. create api for getMyOrders
     3. show orders in profile screen
     4. style orders
-32. Admin Products
-    1. create Admin Order menu in header
-    2. create ProductListScreen.js
-    3. show products with edit and delete button
-    4. show create product button
-    5. implement create product backend
-    6. redirect user to edit product screen
-33. Edit Product
+32. Admin Dashboard UI
+    1. Header.js
+    2. if user is admin show Dashboard
+    3. create DashboardScreen
+    4. create DashboardMenu
+    5. Style dashboard
+33. Admin Products UI
     1. create ProductListScreen.js
-    2. load product data from backend
-    3. handle form submit
-    4. save product in backend
-34. Delete Product
+    2. show products with edit and delete button
+    3. show create product button
+34. Create Product
+    1. create product model
+    2. implement create product route
+    3. create product function in api.js
+    4. call create product function in ProductListScreen
+    5. redirect to edit product
+35. Edit Product
+    1. update parseUrlRequest to get action
+    2. create ProductEditScreen.js
+    3. load product data from backend
+    4. handle form submit
+    5. save product in backend
+36. Delete Product
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-35. Admin Orders
+37. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-36. Edit Order
+38. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-37. Delete Order
+39. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-38. Publish heroku
+40. Show Summary Report in Dashboard
+    1. create summary section
+    2. style summary
+    3. create summary backend
+    4. create getSummary in api.js
+    5. load data in dashboard screen
+    6. show 3 boxes for Users, Orders and Sales
+41. Show Chart in Dashboard
+    1. import chartist
+    2. add chartist css to index.html
+    3. create linear chart for daily sales
+    4. create pie chart for product categories
+42. Publish heroku
     1. publish steps

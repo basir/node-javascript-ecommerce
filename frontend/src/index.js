@@ -11,6 +11,7 @@ import ShippingScreen from './srceens/ShippingScreen';
 import PaymentScreen from './srceens/PaymentScreen';
 import PlaceOrderScreen from './srceens/PlaceOrderScreen';
 import OrderScreen from './srceens/OrderScreen';
+import DashboardScreen from './srceens/DashboardScreen';
 
 const routes = {
   '/': HomeScreen,
@@ -24,6 +25,7 @@ const routes = {
   '/shipping': ShippingScreen,
   '/payment': PaymentScreen,
   '/placeorder': PlaceOrderScreen,
+  '/dashboard': DashboardScreen,
 };
 const router = async () => {
   showLoading();
