@@ -408,3 +408,11 @@ td {
   flex: 4 1 80rem;
   padding: 1rem;
 }
+
+.product-list button {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.tr-action {
+  width: 10rem;
+}
