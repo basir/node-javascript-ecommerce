@@ -34,3 +34,4 @@ package-lock.json
 yarn-lock.json
 frontend/package-lock.json
 frontend/yarn-lock.json
+frontend/main.js
