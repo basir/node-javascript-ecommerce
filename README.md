@@ -1,4 +1,22 @@
-JS AMAZONA
+# JS AMAZONA
+
+Welcome to my coding course to build an ecommerce website like amazon. In this course you will learn the essential tools and skills to design, develop and deploy a fully-function website like amazon using Vanilla JavaScript, HTML5 and CSS3 in frontend and Node and MongoDB in backend.
+
+My name is Basir and I’ll be your instructor in this course. After 17 years of coding in international companies like ROI Vision in Montreal, I found my passion in teaching programming. For the last 5 years I have been tutoring 100 thousands students over my youtube channel, udemy courses and zoom online classes.
+
+I designed this course for anyone seeking to develop a fully-functional ecommerce website like amazon. By the end of this course you’ll be able to design a responsive web template, implement a user-friendly frontend and build a scalable backend. Also you can deploy your website on cloud servers like Heroku and connect it to payment gateways like PayPal.
+
+You need to open a code editor along with me and start coding throughout this course. I teach you:
+
+- Web Design using HTML5, CSS3 including Semantic Elements, Flexbox, Grid System and Response Design.
+- Frontend Development by Pure JavaScript including ES6 Syntax, Rendering System, Single Page App, Libraries for Date Time, drawing chart and etc.
+- Backend Development using Node and MongoDB consist of ExpressJS, JWT Authentication, Mongoose object data modeling and more.
+
+This course is for non-coders or juniors who want to be a professional web developer to get a job in 22 million job opportunities around the world. No requirement is necessary for this course and having a passion for coding is enough.
+
+Feel free to take a look at the course preview and enroll if it is along with your ambitions.
+
+# Table Of Content
 
 1. Create Folder Structure
    1. create root folder as jsamazona
@@ -174,26 +192,26 @@ JS AMAZONA
     8. create userRoute
     9. create createadmin route
 20. Sign-in Screen UI
-    2. create SigninScreen
-    3. render email and password fields
-    4. style signin form
+    1. create SigninScreen
+    2. render email and password fields
+    3. style signin form
 21. Sign-in Screen Backend
-    3. create signin api in backend
-    4. create route for /api/users/signin
-    5. create check user name and password
-    6. if it is not ok the return 401 error
-    7. install express-async-handler
-    8. wrap it in expressAsyncHandler
-    9. add error middleware in server.js
-    10. install Postman
-    11. send post request
-    12. test with invalid user password
-    13. otherwise generate token
-    14. install jsonwebtoken
-    15. set config.JWT_SECRET to somethingsecret
-    16. add generateToken to utils.js
-    17. return token
-    18. test with correct user and password
+    1. create signin api in backend
+    2. create route for /api/users/signin
+    3. create check user name and password
+    4. if it is not ok the return 401 error
+    5. install express-async-handler
+    6. wrap it in expressAsyncHandler
+    7. add error middleware in server.js
+    8. install Postman
+    9. send post request
+    10. test with invalid user password
+    11. otherwise generate token
+    12. install jsonwebtoken
+    13. set config.JWT_SECRET to somethingsecret
+    14. add generateToken to utils.js
+    15. return token
+    16. test with correct user and password
 22. Sign-in Screen Action
     1. after_render handle form submit
     2. create signin request in frontend
@@ -285,15 +303,19 @@ JS AMAZONA
     4. call create product function in ProductListScreen
     5. redirect to edit product
 35. Edit Product UI
-    2. create ProductEditScreen.js
-    3. load product data from backend
-    4. handle form submit
-    5. save product in backend
-36. Delete Product
-    3. update ProductListScreen.js
-    4. handle delete button
-    5. rerender after deletion
-37. Upload Product Image
+    1. create ProductEditScreen.js
+    2. load product data from backend
+    3. handle form submit
+    4. save product in backend
+36. Edit Product Backend
+    1. handle form submit
+    2. create updateProduct
+    3. save product in backend
+37. Delete Product
+    1. update ProductListScreen.js
+    2. handle delete button
+    3. rerender after deletion
+38. Upload Product Image
     1. npm install multer
     2. create routes/uploadRoute.js
     3. import express and multer
@@ -310,43 +332,43 @@ JS AMAZONA
     14. call uploadProductImage()
     15. create uploadProductImage in api.js
     16. update server.js
-38. Build Project
+39. Build Project
     1. create build script for frontend
     2. create build script for backend
     3. update sever.js to serve frontend build folder and uploads folder
     4. stop running frontend
     5. npm run build
     6. check localhost:5000 for running website and showing images
-39. Show Categories In Sidebar Menu
+40. Show Categories In Sidebar Menu
     1. update ProductListScreen.js
     2. handle delete button
     3. rerender after deletion
-40. Admin Orders
+41. Admin Orders
     1. create Admin Order menu in header
     2. create AdminOrder.js
     3. load orders from backend
     4. list them in the screen
     5. show delete and edit button
     6. redirect to order details on edit action
-41. Edit Order
+42. Edit Order
     1. if order is payed show deliver button for admin
     2. handle click on deliver button
     3. set state to delivered
-42. Delete Order
+43. Delete Order
     1. update OrderListScreen.js
     2. handle delete button
     3. rerender after deletion
-43. Show Summary Report in Dashboard
+44. Show Summary Report in Dashboard
     1. create summary section
     2. style summary
     3. create summary backend
     4. create getSummary in api.js
     5. load data in dashboard screen
     6. show 3 boxes for Users, Orders and Sales
-44. Show Chart in Dashboard
+45. Show Chart in Dashboard
     1. import chartist
     2. add chartist css to index.html
     3. create linear chart for daily sales
     4. create pie chart for product categories
-45. Publish heroku
+46. Publish heroku
     1. publish steps
