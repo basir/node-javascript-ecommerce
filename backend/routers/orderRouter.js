@@ -1,9 +1,20 @@
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
-import { isAuth } from '../utils';
+import { isAuth, isAdmin } from '../utils';
 import Order from '../models/orderModel';
 
 const orderRouter = express.Router();
+
+orderRouter.get(
+  '/',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const orders = await Order.find({}).populate('user');
+    res.send(orders);
+  })
+);
+
 orderRouter.get(
   '/mine',
   isAuth,
@@ -42,6 +53,21 @@ orderRouter.post(
     res.status(201).send({ message: 'New Order Created', order: createdOrder });
   })
 );
+orderRouter.delete(
+  '/:id',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const order = await Order.findById(req.params.id);
+    if (order) {
+      const deletedOrder = await order.remove();
+      res.send({ message: 'Order Deleted', product: deletedOrder });
+    } else {
+      res.status(404).send({ message: 'Order Not Found' });
+    }
+  })
+);
+
 orderRouter.put(
   '/:id/pay',
   isAuth,
