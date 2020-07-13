@@ -1,8 +1,37 @@
-import { parseRequestUrl } from '../utils';
-import { getProduct } from '../api';
+import {
+  parseRequestUrl,
+  showLoading,
+  showMessage,
+  hideLoading,
+} from '../utils';
+import { getProduct, updateProduct } from '../api';
 
 const ProductEditScreen = {
-  after_render: () => {},
+  after_render: () => {
+    const request = parseRequestUrl();
+    document
+      .getElementById('edit-product-form')
+      .addEventListener('submit', async (e) => {
+        e.preventDefault();
+        showLoading();
+        const data = await updateProduct({
+          _id: request.id,
+          name: document.getElementById('name').value,
+          price: document.getElementById('price').value,
+          image: document.getElementById('image').value,
+          brand: document.getElementById('brand').value,
+          category: document.getElementById('category').value,
+          countInStock: document.getElementById('countInStock').value,
+          description: document.getElementById('description').value,
+        });
+        hideLoading();
+        if (data.error) {
+          showMessage(data.error);
+        } else {
+          document.location.hash = '/productlist';
+        }
+      });
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);

@@ -58,6 +58,28 @@ export const createProduct = async () => {
     return { error: err.response.data.message || err.message };
   }
 };
+
+export const updateProduct = async (product) => {
+  try {
+    const { token } = getUserInfo();
+    const response = await axios({
+      url: `${apiUrl}/api/products/${product._id}`,
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      data: product,
+    });
+    if (response.statusText !== 'OK') {
+      throw new Error(response.data.message);
+    }
+    return response.data;
+  } catch (err) {
+    return { error: err.response.data.message || err.message };
+  }
+};
+
 export const signin = async ({ email, password }) => {
   try {
     const response = await axios({
@@ -128,6 +150,7 @@ export const update = async ({ name, email, password }) => {
     return { error: err.response.data.message || err.message };
   }
 };
+
 export const createOrder = async (order) => {
   try {
     const { token } = getUserInfo();
