@@ -1,5 +1,6 @@
 import DashboardMenu from '../components/DashboardMenu';
-import { getProducts, createProduct } from '../api';
+import { getProducts, createProduct, deleteProduct } from '../api';
+import { showLoading, hideLoading, rerender, showMessage } from '../utils';
 
 const ProductListScreen = {
   after_render: () => {
@@ -13,6 +14,21 @@ const ProductListScreen = {
     Array.from(editButtons).forEach((editButton) => {
       editButton.addEventListener('click', () => {
         document.location.hash = `/product/${editButton.id}/edit`;
+      });
+    });
+    const deleteButtons = document.getElementsByClassName('delete-button');
+    Array.from(deleteButtons).forEach((deleteButton) => {
+      deleteButton.addEventListener('click', async () => {
+        if (confirm('Are you sure to delete this product?')) {
+          showLoading();
+          const data = await deleteProduct(deleteButton.id);
+          if (data.error) {
+            showMessage(data.error);
+          } else {
+            rerender(ProductListScreen);
+          }
+          hideLoading();
+        }
       });
     });
   },
