@@ -363,7 +363,25 @@ Feel free to take a look at the course preview and enroll if it is along with yo
     3. create linear chart for daily sales
     4. create pie chart for product categories
 44. Publish heroku
-    1. publish steps
+    1. Create git repository
+    2. Create heroku account
+    3. install Heroku CLI
+    4. heroku login
+    5. heroku apps:create <yourname>jsamazona
+    6. Edit package.json for heroku-prebuild
+    7. Edit package.json for heroku-postbuild
+    8. Edit package.json for node engines
+    9. Create Procfile
+    10. Edit server.js for PORT
+    11. Create mongodb atlas database
+    12. create MongoDB Account
+    13. open cloud.mongodb.com
+    14. add new user and save username and password
+    15. set Network Access to accept all requests
+    16. Create new database
+    17. create connection string based on db name and user and password
+    18. Set Cloud MongoDB connection in heroku env variables
+    19. Commit and push
 45. Product Search Bar
     1. create search bar in Header.js
     2. add style
