@@ -1,22 +1,136 @@
 # JS AMAZONA
+# Amazona ECommerce Website
+![amazona](/frontend/images/jsamazona.jpg)
 
-Welcome to my coding course to build an ecommerce website like amazon. In this course you will learn the essential tools and skills to design, develop and deploy a fully-function website like amazon using Vanilla JavaScript, HTML5 and CSS3 in frontend and Node and MongoDB in backend.
+# JavaScript Tutorial - Full ECommerce in 7 Hours [2021]
 
-My name is Basir and I’ll be your instructor in this course. After 17 years of coding in international companies like ROI Vision in Montreal, I found my passion in teaching programming. For the last 5 years I have been tutoring 100 thousands students over my youtube channel, udemy courses and zoom online classes.
+Welcome to my React and Node tutorial to build a fully-functional e-commerce website exactly like amazon. Open your code editor and follow me for the next hours to build an e-commerce website using Vanilla JavaScript and Node.JS, ExpressJS and MongoDB.
 
-I designed this course for anyone seeking to develop a fully-functional ecommerce website like amazon. By the end of this course you’ll be able to design a responsive web template, implement a user-friendly frontend and build a scalable backend. Also you can deploy your website on cloud servers like Heroku and connect it to payment gateways like PayPal.
+## Watch YouTube Video
+[https://www.youtube.com/watch?v=N3FDyheHVMM](https://www.youtube.com/watch?v=N3FDyheHVMM)
 
-You need to open a code editor along with me and start coding throughout this course. I teach you:
+## Demo Website
 
-- Web Design using HTML5, CSS3 including Semantic Elements, Flexbox, Grid System and Response Design.
-- Frontend Development by Pure JavaScript including ES6 Syntax, Rendering System, Single Page App, Libraries for Date Time, drawing chart and etc.
-- Backend Development using Node and MongoDB consist of ExpressJS, JWT Authentication, Mongoose object data modeling and more.
+- 👉 Heroku : [https://jsamazona.herokuapp.com](https://jsamazona.herokuapp.com)
+- 👉 AWS : [https://jsamazona.webacademy.pro](https://jsamazona.webacademy.pro)
 
-This course is for non-coders or juniors who want to be a professional web developer to get a job in 22 million job opportunities around the world. No requirement is necessary for this course and having a passion for coding is enough.
 
-Feel free to take a look at the course preview and enroll if it is along with your ambitions.
+## You Will Learn
 
-# Table Of Content
+- HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
+- JavaScript: ES6+, Array Functions, Rendering System
+- Node & Express: Web API, Body Parser, File Upload, JWT
+- MongoDB: Mongoose, Aggregation
+- Development: ESLint, Babel, Git, Github,
+- Deployment: Heroku
+- Watch React & Node Tutorial
+
+## Run Locally
+
+### 1. Clone repo
+
+```
+$ git clone git@github.com:basir/node-javascript-ecommerce.git
+$ cd node-javascript-ecommerce
+```
+
+### 2. Setup MongoDB
+ - Download and Install it from [mongodb.com](https://www.mongodb.com/try/download/community)
+
+### 3. Create .env file
+- Create .env file in project folder
+- Enter these lines to that:
+
+```
+MONGODB_URL=mongodb://localhost/jsamazona
+JWT_SECRET=somethingsecret
+PAYPAL_CLIENT_ID=db
+```
+
+### 4. Run Backend
+
+```
+$ npm install
+$ npm run build
+$ npm start
+```
+
+### 5. Run Frontend
+
+```
+# open new terminal
+$ cd frontend
+$ npm install
+$ npm start
+```
+
+### 6. Create Admin User
+
+- Run this on chrome: http://localhost:5000/api/users/createadmin
+- Note admin email and password
+
+### 7. Admin Login
+
+- Run http://localhost:8080/#/signin
+- Enter admin email and password and click signin
+- Click Dashboard Link on Header Menu
+- Click Products on left sidebar
+- Click Create Product Button
+- Enter Product Information
+- Go to home page (http://localhost:8080) and test Ecommerce Website
+
+## Support
+
+- Q/A: https://webacademy.pro/amazona
+- Contact Instructor: [Basir](mailto:basir.jafarzadeh@gmail.com)
+
+
+# Features
+
+1. Home Screen
+   1. Static Web Page Design
+   2. CSS Grid to create website layout
+   3. Flexbox to shape product thumbnails and responsive design
+2. Product Screen
+   1. create single page application
+   2. Create buttons and add events to buttons
+3. Cart Screen
+   1. Save and retrieve data in local storage
+   2. Master in javascript array functions
+   3. Use combo box and add event to it
+   4. re-render screen based on changes in item count
+4. Sign-in and Register Screen
+   1. Create dynamic form
+   2. Input validation in frontend and backend
+   3. Create web server using node.js
+   4. Connect to Mongodb database
+   5. Add registered user to the database
+   6. Authenticate user based on email and password
+   7. Using Jsonwebtoken to authorize users
+5. Shipping and Payment Screen
+   1. Create wizard form to get user data in multiple steps
+   2. Save user info in the local storage
+6. Place Order Screen
+   1. Validate and create order in the database
+7. Order Screen
+   1. Payment with paypal
+   2. Show order state based on user and admin activities
+8. Profile Screen
+   1. Create authenticated routes
+   2. enable user to update their informations
+   3. enable user to logout and clear local storage
+   4. show list of orders to user and link it to details
+9. Dashboard Screen
+   1. Create professional dashboard using pure CSS
+   2. Using chart library to show sales information
+10. Order Screen
+    1. Enable admin to mange orders
+    2. show loading message and alert message
+11. Product Screen
+    1. enable admin to manage products
+    2. upload product images to server
+
+# Lessons
 
 1. Create Folder Structure
    1. create root folder as jsamazona

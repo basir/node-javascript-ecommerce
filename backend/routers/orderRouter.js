@@ -45,7 +45,12 @@ orderRouter.get(
         },
       },
     ]);
-    res.send({ users, orders, dailyOrders, productCategories });
+    res.send({
+      users,
+      orders: orders.length === 0 ? [{ numOrders: 0, totalSales: 0 }] : orders,
+      dailyOrders,
+      productCategories,
+    });
   })
 );
 orderRouter.get(
