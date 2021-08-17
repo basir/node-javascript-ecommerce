@@ -20,7 +20,9 @@ button {
   cursor: pointer;
 }
 input,
-button {
+button,
+select,
+textarea {
   font: 1.6rem helvetica;
   padding: 1rem;
   border: 0.1rem #808080 solid;
@@ -548,4 +550,14 @@ ul.categories {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+/* review */
+
+.review {
+  list-style-type: none;
+  padding: 0;
+}
+.review li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }

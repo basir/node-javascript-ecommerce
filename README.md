@@ -512,3 +512,8 @@ $ npm start
     7. Update index.js to render aside 9.
     8. call getCategories
     9. create getCategories in api.js
+47. Review Products
+    1.  create review model
+    2.  create review form
+    3.  create review api
+    4.  style review form
