@@ -456,3 +456,34 @@ td {
 .charts > div {
   flex: 1;
 }
+/* search */
+
+.search {
+  width: 40%;
+}
+form.search-form input[type='text'] {
+  float: left;
+  width: 80%;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+form.search-form button {
+  float: left;
+  width: 40px;
+  background: #f0c040;
+
+  border-left: none;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+form.search-form button:hover {
+  background: #0b7dda;
+}
+/* Clear floats */
+form.search-form::after {
+  content: '';
+  clear: both;
+  display: table;
+}

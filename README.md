@@ -44,7 +44,7 @@ $ cd node-javascript-ecommerce
 ```
 MONGODB_URL=mongodb://localhost/jsamazona
 JWT_SECRET=somethingsecret
-PAYPAL_CLIENT_ID=db
+PAYPAL_CLIENT_ID="your paypal client id" or sb
 ```
 
 ### 4. Run Backend
@@ -81,7 +81,7 @@ $ npm start
 
 ## Support
 
-- Q/A: https://webacademy.pro/amazona
+- Q/A: https://codingwithbasir.com
 - Contact Instructor: [Basir](mailto:basir.jafarzadeh@gmail.com)
 
 
