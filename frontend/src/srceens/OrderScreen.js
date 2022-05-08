@@ -74,7 +74,7 @@ const OrderScreen = {
   after_render: async () => {
     const request = parseRequestUrl();
     if (document.getElementById('deliver-order-button')) {
-      document.addEventListener('click', async () => {
+      document.getElementById('deliver-order-buttony').addEventListener('click', async () => {
         showLoading();
         await deliverOrder(request.id);
         hideLoading();
