@@ -1,4 +1,4 @@
-# JS AMAZONA
+# JS AMAZONIA
 # Amazona ECommerce Website
 ![amazona](/frontend/images/jsamazona.jpg)
 
